@@ -2,7 +2,10 @@
 <resources>
 
     <string name="app_name">SeminarApp</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dummy_button">Information</string>
+    <string name="label1">Hier steht mal ein Passwort</string>
+    <string name="label2">Buchstaben:</string>
+    <string name="label3">Sonderzeichen:</string>
+    <string name="label4">password quality</string>
 
 </resources>
