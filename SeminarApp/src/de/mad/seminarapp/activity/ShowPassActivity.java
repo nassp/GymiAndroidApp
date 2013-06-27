@@ -18,7 +18,7 @@ public class ShowPassActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); 
-        setContentView(R.layout.activity_game);
+        setContentView(R.layout.activity_showpass);
         
         final Button btnBack = (Button) findViewById(R.id.gameViewButton1);
         final TextView password = (TextView) findViewById(R.id.gameViewTextView2);
