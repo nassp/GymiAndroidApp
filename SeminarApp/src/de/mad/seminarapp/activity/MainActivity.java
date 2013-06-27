@@ -67,7 +67,7 @@ public class MainActivity extends Activity {
 
 	}
 
-	public void goToGameView(View view) {
+	public void goToShowPass(View view) {
 		// start new intent
 		Intent nextScreen = new Intent(getApplicationContext(),
 				ShowPassActivity.class);
@@ -76,6 +76,16 @@ public class MainActivity extends Activity {
 		nextScreen.putExtra("password", text.getText().toString());
 		// Log for debug
 		Log.e("goToGameView: ", text.getText().toString() + ".");
+
+		startActivity(nextScreen);
+
+	}
+	
+	public void goToGameView(View view) {
+		// start new intent
+		Intent nextScreen = new Intent(getApplicationContext(),
+				GameActivity.class);
+		;
 
 		startActivity(nextScreen);
 

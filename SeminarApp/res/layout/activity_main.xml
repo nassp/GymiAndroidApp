@@ -99,8 +99,7 @@
             android:id="@+id/mainViewButton1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.18"
-            android:onClick="goToGameView"
+            android:onClick="goToShowPass"
             android:text="@string/mainViewButton" />
 
         <Button
@@ -108,7 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:layout_weight="0.36"
+			android:onClick="goToGameView"
             android:text="@string/mainViewButton2" />
 
     </LinearLayout>
