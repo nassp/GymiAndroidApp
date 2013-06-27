@@ -2,7 +2,12 @@
 <resources>
 
     <string name="app_name">SeminarApp</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="mainViewButton">Information</string>
+    <string name="mainViewLabel1">Hier steht mal ein Passwort</string>
+    <string name="mainViewLabel2">Buchstaben:</string>
+    <string name="mainViewLabel3">Sonderzeichen:</string>
+    <string name="mainViewLabel4">password quality</string>
+    <string name="gameViewBackButton">Zurück</string>
+    <string name="gameViewLabel1">Dein Passwort lautet</string>
 
 </resources>
