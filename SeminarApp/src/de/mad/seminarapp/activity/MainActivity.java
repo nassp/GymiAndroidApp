@@ -59,8 +59,7 @@ public class MainActivity extends Activity {
             }
  
             public void onStopTrackingTouch(SeekBar seekBar) {
-//                Toast.makeText(SeekbarActivity.this,"seek bar progress:"+progressChanged, 
-//                        Toast.LENGTH_SHORT).show();
+//                // TODO Auto-generated method stub
             }
         });
 
@@ -99,7 +98,7 @@ public class MainActivity extends Activity {
                 case 0: //Zahl
                     randNumber = new Random().nextInt()%10;
                     randNumber += 48;
-                    passwordKette.append(randNumber);
+                    passwordKette.append((char)randNumber);
                     break;
                 case 1: //Buchstabe
                     if (!((CheckBox)findViewById(R.id.mainViewCheckBox1)).isChecked()) {
