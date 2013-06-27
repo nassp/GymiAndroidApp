@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
 	public void goToGameView(View view) {
 		// start new intent
 		Intent nextScreen = new Intent(getApplicationContext(),
-				GameActivity.class);
+				ShowPassActivity.class);
 		// send password to next view
 		final TextView text = (TextView) findViewById(R.id.mainViewTextView1);
 		nextScreen.putExtra("password", text.getText().toString());

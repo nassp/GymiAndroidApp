@@ -11,7 +11,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class GameActivity extends Activity {
+public class ShowPassActivity extends Activity {
 	
 	
     @Override

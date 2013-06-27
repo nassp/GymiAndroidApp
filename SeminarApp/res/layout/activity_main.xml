@@ -14,7 +14,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="219dp"
+            android:layout_height="200dp"
             android:orientation="vertical" >
 
             <TextView
@@ -24,7 +24,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="50dp"
-                android:layout_weight="1.38"
+                android:layout_weight="0.95"
                 android:text="@string/mainViewLabel1"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -89,12 +89,28 @@
             android:textAppearance="?android:attr/textAppearanceSmall" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/mainViewButton1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:onClick="goToGameView"
-        android:text="@string/mainViewButton" />
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/mainViewButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.18"
+            android:onClick="goToGameView"
+            android:text="@string/mainViewButton" />
+
+        <Button
+            android:id="@+id/mainViewButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0.36"
+            android:text="@string/mainViewButton2" />
+
+    </LinearLayout>
 
 </FrameLayout>

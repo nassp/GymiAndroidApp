@@ -9,5 +9,6 @@
     <string name="mainViewLabel4">password quality</string>
     <string name="gameViewBackButton">Zurück</string>
     <string name="gameViewLabel1">Dein Passwort lautet</string>
+    <string name="mainViewButton2">Zum Spiel</string>
 
 </resources>
