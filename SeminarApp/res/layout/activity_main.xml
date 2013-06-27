@@ -1,28 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#0099cc"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/default_screen_bg"
     tools:context=".MainActivity" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout1"
         android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/textView1"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="100dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="50dp"
-            android:layout_weight="0.26"
-            android:text="@string/mainViewLabel1"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:layout_height="219dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mainViewTextView1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_weight="1.38"
+                android:text="@string/mainViewLabel1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,49 +36,51 @@
             android:layout_weight="0.26" >
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/mainViewTextView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.13"
+                android:layout_marginLeft="15dp"
                 android:text="@string/mainViewLabel2"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <CheckBox
-                android:id="@+id/checkBox1"
+                android:id="@+id/mainViewCheckBox1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.3" />
+                android:layout_marginLeft="10dp" />
+
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:layout_weight="0.26" >
+            android:layout_height="match_parent" >
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/mainViewTextView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.13"
+                android:layout_marginLeft="15dp"
                 android:text="@string/mainViewLabel3"
                 android:textAppearance="?android:attr/textAppearanceLarge" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/mainViewCheckBox2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
-                android:layout_weight="0.5" />
+                android:layout_marginLeft="10dp" />
+
         </LinearLayout>
 
         <SeekBar
-            android:id="@+id/seekBar1"
+            android:id="@+id/mainViewSeekBar1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:progress="40"
             android:layout_weight="1" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/mainViewTextView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -82,7 +90,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/mainViewButton1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
