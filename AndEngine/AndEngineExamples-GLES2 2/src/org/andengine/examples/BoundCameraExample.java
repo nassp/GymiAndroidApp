@@ -47,8 +47,8 @@ public class BoundCameraExample extends SimpleBaseGameActivity implements IAccel
 	// Constants
 	// ===========================================================
 
-	private static final int CAMERA_WIDTH = 400;
-	private static final int CAMERA_HEIGHT = 480;
+	private final int CAMERA_WIDTH = 720;
+	private final int CAMERA_HEIGHT = 480;
 
 	// ===========================================================
 	// Fields
