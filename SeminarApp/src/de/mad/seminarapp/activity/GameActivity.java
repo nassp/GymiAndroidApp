@@ -59,9 +59,11 @@ public class GameActivity extends SimpleBaseGameActivity implements IAcceleratio
 	// Constants
 	// ===========================================================
 
+	// define the size of the camera view
 	private int CAMERA_WIDTH;
 	private int CAMERA_HEIGHT;
 
+	// camera is the viewport on the scene
 	private Camera mCamera;
 
 	// fixture binds a shape to a body and defines things like density,friction,
@@ -80,16 +82,19 @@ public class GameActivity extends SimpleBaseGameActivity implements IAcceleratio
 	private TiledTextureRegion mBoxFaceTextureRegion;
 	private TiledTextureRegion mCircleFaceTextureRegion;
 
+	// the scene is the "world" or "level" where stuff gets painted
 	private Scene mScene;
 
 	private PhysicsWorld mPhysicsWorld;
 
+	// save bodys for deletion
 	ArrayList<Body> bodyarray = new ArrayList<Body>();
 	static int bodycount = 0;
 	private int mFaceCount = 0;
 
 	private Body mGroundBody;
 
+	// paddle for 
 	private int PADDLE_WIDTH;
 	private int PADDLE_HEIGHT;
 	private Body paddle;
@@ -109,16 +114,21 @@ public class GameActivity extends SimpleBaseGameActivity implements IAcceleratio
 	@Override
 	public EngineOptions onCreateEngineOptions() {
 
+		// A Toast is a little text box to inform the user
 		Toast.makeText(this, "Catch the faces.", Toast.LENGTH_LONG).show();
 
+		// DisplayMetrics object knows the screen size of the device we are running on
 		DisplayMetrics displayMetrics = new DisplayMetrics();
 		this.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
 
+		// Set camera size to screen size of device
 		CAMERA_HEIGHT = displayMetrics.heightPixels;
 		CAMERA_WIDTH = displayMetrics.widthPixels;
 
+		// Init camera
 		this.mCamera = new Camera(0, 0, CAMERA_WIDTH, CAMERA_HEIGHT);
 
+		// Init EngineOptions (sets screen orientation, camera and )
 		return new EngineOptions(true, ScreenOrientation.PORTRAIT_FIXED, new RatioResolutionPolicy(CAMERA_WIDTH, CAMERA_HEIGHT), mCamera);
 	}
 
@@ -137,8 +147,6 @@ public class GameActivity extends SimpleBaseGameActivity implements IAcceleratio
 
 	@Override
 	public Scene onCreateScene() {
-
-		this.enableAccelerationSensor(this);
 
 		this.mEngine.registerUpdateHandler(new FPSLogger());
 

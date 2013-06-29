@@ -2,6 +2,8 @@ package de.mad.seminarapp.activity;
 
 import java.util.Random;
 
+import org.andengine.ui.activity.BaseGameActivity;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
@@ -84,7 +86,7 @@ public class MainActivity extends Activity {
 	public void goToGameView(View view) {
 		// start new intent
 		Intent nextScreen = new Intent(getApplicationContext(),
-				GameActivity.class);
+				BasicGameActivity.class);
 		;
 
 		startActivity(nextScreen);

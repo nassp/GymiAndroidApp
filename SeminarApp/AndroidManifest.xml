@@ -45,11 +45,11 @@
 			android:theme="@style/FullscreenTheme" >        
         </activity>
         <activity 
-            android:name="de.mad.seminarapp.activity.GameActivity"
+            android:name="de.mad.seminarapp.activity.BasicGameActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
            	android:label="@string/app_name"
 			android:theme="@style/FullscreenTheme" 
-			android:screenOrientation="reversePortrait">        
+			android:screenOrientation="sensorPortrait">        
         </activity>
     </application>
 
